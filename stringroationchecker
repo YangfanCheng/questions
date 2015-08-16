@@ -1,0 +1,35 @@
+#include<iostream>
+#include<string>
+
+using std::string;
+
+bool isRotation(string s1,string s2);
+bool isSubstring(string s1x2,string s2);
+
+int main(){
+    string s1, s2;
+    s1="waterbottle";
+    s2="bottlewater";
+    std::cout<<isRotation(s1,s2);
+    
+
+    std::cin.get();
+    return 0;
+}
+
+bool isRotation(string s1,string s2){
+    int len1=s1.length();
+    int len2=s2.length();
+    if(len1==len2){
+        string s1x2=s1+s1;
+        return isSubstring(s1x2, s2);    
+    }      
+    return false;
+}
+bool isSubstring(string s1x2,string s2){
+    std::cout<<s1x2;
+    if (s1x2.find(s2) != std::string::npos){ 
+        return true;
+    }
+    else return false;
+}
