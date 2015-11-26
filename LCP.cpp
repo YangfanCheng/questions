@@ -28,9 +28,9 @@ string LCP(vector<string> &A) {
 }
 
 int main(){
-    vector<string> S{"yolo","yoloa","yoloba"};
+    vector<string> S{"catwalk","catfish","cattalk"};
     string result;
     result = LCP(S);
-    cout << result << endl;
+    cout << result << endl; //prints 'cat';
     return 0;
 }
