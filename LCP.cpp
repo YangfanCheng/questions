@@ -15,9 +15,8 @@ string LCP(vector<string> &A) {
     for(int i = 0; i < min; i++){
         char C = A[0][i];
         bool allEqual = true;
-        for(int j = 1; i < A.size(); i++){
+        for(int j = 1; j < A.size(); j++){
             if(C != A[j][i]){
-				cout << A[j][i] << endl;
                 allEqual = false;
             }
         }
@@ -29,9 +28,9 @@ string LCP(vector<string> &A) {
 }
 
 int main(){
-	vector<string> S{"abc","abcd","ab","ae"}
-	string result;
-	result = LCP(S);
-	cout << result << endl; // should output 'a'
-	return 0;
+    vector<string> S{"yolo","yoloa","yoloba"};
+    string result;
+    result = LCP(S);
+    cout << result << endl;
+    return 0;
 }
