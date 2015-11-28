@@ -6,7 +6,7 @@ int Solution::kthsmallest(const vector<int> &A, int k) {
     sort(B.begin(), B.end());
     return B[k - 1];
 }
-//
+//quick select O(n)
 int Solution::kthSmallest(const vector<int> &A, int k) {
 	vector<int> B = A;
 	int from = 0, to = B.size() - 1;
