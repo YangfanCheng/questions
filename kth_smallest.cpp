@@ -10,10 +10,10 @@ int Solution::kthsmallest(const vector<int> &A, int k) {
 int Solution::kthSmallest(const vector<int> &A, int k) {
 	vector<int> B = A;
 	int from = 0, to = B.size() - 1;
-	 while (from < to) {
-	  int l = from, r = to;
-	  int mid = B[(l + r) / 2];
-		  while (l < r) {
+	while (from < to) {
+		int l = from, r = to;
+		int mid = B[(l + r) / 2];
+		while (l < r) {
 			if (B[l] >= mid) { 
 				int tmp = B[r];
 				B[r] = B[l];
